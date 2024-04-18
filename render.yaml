@@ -1,7 +1,7 @@
 # Exported from Render on 2024-04-18T09:49:05Z
 services:
 - type: web
-  name: Dash-bio-div-finale
+  name: scr/app
   runtime: python
   repo: https://github.com/Gisspecialist/Dash-Plotly-app
   plan: free
@@ -11,4 +11,4 @@ services:
   region: oregon
   buildCommand: pip install -r requirements.txt
   startCommand: gunicorn --chdir src app:server
-version: "1"
+version: '1'
