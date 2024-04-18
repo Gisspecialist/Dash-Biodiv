@@ -5,7 +5,6 @@ import pandas as pd
 import plotly.express as px
 from urllib.request import urlopen
 
-
 # Load country geometry data
 with urlopen('https://raw.githubusercontent.com/johan/world.geo.json/master/countries.geo.json') as response:
     countries = json.load(response)
@@ -18,7 +17,6 @@ app = dash.Dash(__name__)
 
 #From Dash tools
 server = app.server
-
 
 # Create choropleth map figure
 def create_figure(species, threshold):
